@@ -44,7 +44,7 @@ export default function Footer() {
                 </div>
                 <div className="flex flex-col gap-2 text-sm lg:text-md">
                     <h6 className="font-bold">Menu:</h6>
-                    <ul className="space-y-2">
+                    <ul className="space-y-2 ps-2">
                         <li className="hover:font-bold hover:cursor-pointer">
                             <Link href={'/'}>Home</Link>
                         </li>
