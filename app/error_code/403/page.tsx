@@ -3,6 +3,8 @@ import Footer from "@components/Footer"
 import Image from "next/image"
 
 export default function UnderDevelopment() {
+    const companyEmail = process.env.NEXT_PUBLIC_COMPANY_EMAIL === "" ? "companyEmail" : process.env.NEXT_PUBLIC_COMPANY_EMAIL;
+    
     return (
         <>
         <Header />
@@ -19,7 +21,7 @@ export default function UnderDevelopment() {
                                 We&apos;re currently building this page to serve you better. Our team is working diligently to complete it and make it available as soon as possible.
                             </p>
                             <p className="text-sm text-gray-900">
-                                We appreciate your patience and understanding. If you need assistance, feel free to contact us at <a className="text-green-700 font-bold underline" href="mailto:dimensionph1@gmail.com">dimensionph1@gmail.com</a>.
+                                We appreciate your patience and understanding. If you need assistance, feel free to contact us at <a className="text-green-700 font-bold underline" href={`mailto:${companyEmail}`}>{companyEmail}</a>.
                             </p>
                         </div>
                     </div>

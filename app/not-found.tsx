@@ -3,6 +3,8 @@ import Footer from "@components/Footer"
 import Image from "next/image"
 
 export default function pageNotFound() {
+    const companyEmail = process.env.NEXT_PUBLIC_COMPANY_EMAIL === "" ? "companyEmail" : process.env.NEXT_PUBLIC_COMPANY_EMAIL;
+
     return (
         <>
         <Header />
@@ -20,7 +22,7 @@ export default function pageNotFound() {
                             </p>
                             <p className="text-sm text-gray-900">
                                 We appreciate your patience and understanding. If you need help or were expecting something here, feel free to reach out at <a className="text-green-700 font-bold underline" 
-                                href="mailto:dimensionph1@gmail.com@gmail.com">dimensionph1@gmail.com</a>.
+                                href={`mailto:${companyEmail}`}>{companyEmail}</a>.
                             </p>
                         </div>
                     </div>
