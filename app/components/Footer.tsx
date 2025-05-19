@@ -1,11 +1,12 @@
 import { Smartphone, Mail, Facebook, Instagram, Twitter, Linkedin } from "lucide-react"
+import Link from "next/link";
 
 export default function Footer() {
     const companyEmail = process.env.NEXT_PUBLIC_COMPANY_EMAIL === "" ? "companyEmail" : process.env.NEXT_PUBLIC_COMPANY_EMAIL;
 
     return(
         <footer className="bg-green-900 pt-14 pb-4 text-white px-5 lg:px-10">
-            <div className="flex justify-between items-start w-fit gap-5 lg:gap-10">
+            <div className="flex justify-between items-start w-fit gap-5 lg:gap-10 lg:w-full lg:justify-evenly">
                 <div className="flex flex-col justify-start space-y-2 text-sm lg:text-md">
                     <h6 className="font-bold">Contact Us:</h6>
                     {/* Contacts */}
@@ -40,6 +41,23 @@ export default function Footer() {
                             <a href="#">Linkedin</a>
                         </div>
                     </div>
+                </div>
+                <div className="flex flex-col gap-2 text-sm lg:text-md">
+                    <h6 className="font-bold">Menu:</h6>
+                    <ul className="space-y-2">
+                        <li className="hover:font-bold hover:cursor-pointer">
+                            <Link href={'/'}>Home</Link>
+                        </li>
+                        <li className="hover:font-bold hover:cursor-pointer">
+                            <Link href={'/announcement'}>Announcement</Link>
+                        </li>
+                        <li className="hover:font-bold hover:cursor-pointer">
+                            <Link href={'/testimonials'}>Testimonials</Link>
+                        </li>
+                        <li className="hover:font-bold hover:cursor-pointer">
+                            <Link href={'/about'}>About</Link>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div className="text-center mt-10">
