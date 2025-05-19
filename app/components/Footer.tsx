@@ -1,6 +1,8 @@
 import { Smartphone, Mail, Facebook, Instagram, Twitter, Linkedin } from "lucide-react"
 
 export default function Footer() {
+    const companyEmail = process.env.NEXT_PUBLIC_COMPANY_EMAIL === "" ? "companyEmail" : process.env.NEXT_PUBLIC_COMPANY_EMAIL;
+
     return(
         <footer className="bg-green-900 pt-14 pb-4 text-white px-5 lg:px-10">
             <div className="flex justify-between items-start w-fit gap-5 lg:gap-10">
@@ -14,7 +16,7 @@ export default function Footer() {
                         </div>
                         <div className="flex items-center gap-2">
                             <Mail size={15} />
-                            <a href="mailto:dimensionph1@gmail.com">dimensionph1@gmail.com</a>
+                            <a href={`mailto:${companyEmail}`}>{companyEmail}</a>
                         </div>
                     </div>
                 </div>

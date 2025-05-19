@@ -1,13 +1,28 @@
 import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
 
+// Helper to safely get env variables and split by comma
+function getPathsFromEnv(envVar?: string): string[] {
+  if (!envVar) return [];
+  return envVar.split(',').map(path => path.trim().toLowerCase());
+}
+
 export function middleware(req: NextRequest) {
   const maintenanceMode = process.env.MAINTENANCE_MODE === "true";
   const developmentMode = true;
   const pathname = req.nextUrl.pathname.toLowerCase();
+  
+  const pathUnderMaintenance = getPathsFromEnv(process.env.PATH_UNDER_MAINTENANCE);
+  const pathUnderDevelopment = getPathsFromEnv(process.env.PATH_UNDER_DEVELOPMENT);
 
-  const pathUnderMaintenance = ['/empty'];
-  const pathUnderDevelopment = ['/about','/announcement', '/testimonials', '/contacts'];
+  // Prevent this page from being blocked
+  if (
+    pathname.startsWith('/_next') ||
+    pathname.startsWith('/error_code/') ||
+    pathname.startsWith('/favicon.ico')
+  ) {
+    return NextResponse.next();
+  }
 
   if (shouldRedirectToMaintenance(pathname, maintenanceMode, pathUnderMaintenance)) {
     return NextResponse.redirect(new URL('/error_code/503', req.url));

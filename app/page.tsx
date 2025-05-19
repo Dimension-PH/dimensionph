@@ -4,7 +4,7 @@ import { Fredoka } from "next/font/google";
 import Header from "@components/Header";
 import Footer from "@components/Footer";
 import CommunityBanner from "@components/CommunityBanner";
-import ApplyBtn from "./components/ApplyBtn";
+import Btn from "./components/Button";
 
 const fredoka = Fredoka({
   subsets: ['latin'],
@@ -27,10 +27,8 @@ export default function Home() {
                           At Dimension-PH, we are redefining online education by connecting students from all walks of life in a dynamic and inclusive virtual environment. Our innovative teaching methods, personalized support, and dedication to excellence empower learners to unlock their full potential. Join us on a journey of growth, knowledge, and endless opportunities where education knows no boundaries.
                       </p>
                       <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                          <ApplyBtn />
-                          <button className="shadow-lg shadow-lime-300 hover:shadow-sm border-2 border-green-700 text-green-700 px-8 py-3 rounded-full font-medium hover:bg-gradient-to-tr hover:from-green-800 hover:to-lime-500 hover:text-white transition duration-300">
-                              Learn More
-                          </button>
+                          <Btn className="shadow-lg shadow-lime-300 hover:shadow-sm bg-gradient-to-tr from-green-700 to-lime-400 hover:from-green-800 hover:to-lime-500 text-white px-12 py-2 rounded-full font-medium hover:shadow-lg transition duration-300" redirect="/apply" text="Apply" />
+                          <Btn className="shadow-lg shadow-lime-300 hover:shadow-sm border-2 border-green-700 text-green-700 px-8 py-2 rounded-full font-medium hover:bg-gradient-to-tr hover:from-green-800 hover:to-lime-500 hover:text-white transition duration-300" redirect="/about" text="Learn More" />
                       </div>
                   </div>
                   
