@@ -6,7 +6,7 @@ export default function About() {
     return (
         <>
             <Header />
-            <section className="relative py-16 px-10 bg-lime-200 space-y-4">
+            <section className="relative py-16 px-10 bg-lime-100 space-y-4">
                 <div className="mx-auto space-y-8 relative z-1">
                     <div className="text-center lg:px-10 max-w-5xl mx-auto space-y-4">
                         <h1 className="text-4xl font-bold">About Us</h1>
