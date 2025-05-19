@@ -9,25 +9,28 @@ export default function About() {
             <section className="relative py-16 px-10 bg-lime-100 space-y-4">
                 <div className="mx-auto space-y-8 relative z-1">
                     <div className="text-center lg:px-10 max-w-5xl mx-auto space-y-4">
-                        <h1 className="text-4xl font-bold">About Us</h1>
-                        <p><strong>Dimension PH</strong> is a dedicated <strong>ESL (English as a Second Language)</strong> teaching platform in the Philippines, committed to helping individuals enhance their English communication skills. In partnership with <strong>51Talk</strong> as our <strong>third-party center</strong>, we connect passionate educators with eager learners to foster confident, fluent English speakers in a supportive and engaging virtual environment.</p>
+                        <h1 className="text-2xl lg:text-4xl font-bold">About Us</h1>
+                        <p className="text-sm lg:text-md"><strong>Dimension PH</strong> is a dedicated <strong>ESL (English as a Second Language)</strong> teaching platform in the Philippines, committed to helping individuals enhance their English communication skills. In partnership with <strong>51Talk</strong> as our <strong>third-party center</strong>, we connect passionate educators with eager learners to foster confident, fluent English speakers in a supportive and engaging virtual environment.</p>
                     </div>
                     
-                    <div className="w-fit mx-auto border">
-                        <Image src={"/Banner.jpg"} alt={"Dimension PH - Banner"} width={551} height={245} />
+                    <div className="mx-auto px-10">
+                        <div className="w-fit max-w-md mx-auto border">
+                            <Image src={"/Banner.jpg"} alt={"Dimension PH - Banner"} width={551} height={245} />
+                        </div>
                     </div>
                 </div>
+                <hr className="mx-10 border-3 border-gray-500/30 mt-10" />
                 {/* Vision & mission */}
                 <div className="relative text-center lg:px-10 max-w-5xl mx-auto space-y-4 mt-10 z-1">
                     <div className="space-y-4">
-                        <h2 className="text-3xl">Our Vision</h2>
-                        <p>At <strong>Dimension-PH Online Tutorial Services</strong>, our vision is to redefine the standards of online education. We envision a future where learning transcends borders, connecting students from diverse backgrounds in a dynamic virtual environment. Through innovative teaching methods, personalized support, and a commitment to excellence, we strive to be at the forefront of educational innovation—making a lasting impact on our students&apos; lives and contributing to a brighter future for generations to come.</p>
+                        <h2 className="text-xl lg:text-3xl">Our Vision</h2>
+                        <p className="text-sm lg:text-md">At <strong>Dimension-PH Online Tutorial Services</strong>, our vision is to redefine the standards of online education. We envision a future where learning transcends borders, connecting students from diverse backgrounds in a dynamic virtual environment. Through innovative teaching methods, personalized support, and a commitment to excellence, we strive to be at the forefront of educational innovation—making a lasting impact on our students&apos; lives and contributing to a brighter future for generations to come.</p>
                     </div>
                     <div className="space-y-4">
-                        <h2 className="text-3xl">Our Goal</h2>
-                        <p>Our goal is to inspire a love for learning, empower individuals with valuable skills and knowledge, and cultivate a community of lifelong learners equipped to thrive in an ever-evolving world.</p>
+                        <h2 className="text-xl lg:text-3xl font-medium">Our Goal</h2>
+                        <p className="text-sm lg:text-md">Our goal is to inspire a love for learning, empower individuals with valuable skills and knowledge, and cultivate a community of lifelong learners equipped to thrive in an ever-evolving world.</p>
                     </div>
-                    <div className="space-y-4">
+                    <div className="space-y-4 text-sm lg:text-md">
                         <p>In this vision, <strong>Dimension-PH</strong> becomes synonymous with quality education, innovation, and inclusivity, serving as a beacon of inspiration and transformation in the global education landscape.</p>
                         <p>We aspire to empower individuals to realize their full potential, embrace new opportunities, and shape a world where education knows no bounds.</p>
                     </div>
