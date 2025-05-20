@@ -4,7 +4,7 @@ import Footer from "@components/Footer"
 
 export default function About() {
     return (
-        <>
+        <> 
             <Header />
             <section className="relative py-16 px-10 bg-lime-100 space-y-4">
                 <div className="mx-auto space-y-8 relative z-1">
