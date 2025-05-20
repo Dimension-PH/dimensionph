@@ -13,7 +13,7 @@ const geistSans = Geist({
 // });
 
 const robotoSerif = Roboto_Serif({
-  variable: "--font-roboto",
+  variable: "--font-roboto-serif",
   subsets: ["latin"]
 })
 

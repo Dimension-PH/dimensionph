@@ -17,9 +17,9 @@ export default function Header() {
             <nav className="hidden lg:flex space-x-8">
                 <Link href="/" className="text-gray-600 hover:text-green-700 font-medium">Home</Link>
                 <Link href="/announcement" className="text-gray-600 hover:text-green-700 font-medium">Announcements</Link>
-                <Link href="/testimonials" className="text-gray-600 hover:text-green-700 font-medium">Testimonials</Link>
+                <Link href="/third-party" className="text-gray-600 hover:text-green-700 font-medium">Partners</Link>
                 <Link href="/about" className="text-gray-600 hover:text-green-700 font-medium">About</Link>
-                <Link href="/contacts" className="text-gray-600 hover:text-green-700 font-medium">Contact</Link>
+                <Link href="/contacts" className="text-gray-600 hover:text-green-700 font-medium">Contact Us</Link>
             </nav>
             <div className="lg:hidden">
                 <button className="text-gray-600 focus:outline-none" onClick={() => setOpen(!isOpen)}>
@@ -38,10 +38,10 @@ export default function Header() {
 
             <nav className="flex flex-col lg:hidden items-center text-lg space-y-4 pb-4">
                 <Link href="/" className="text-gray-600 hover:text-green-700 font-medium">Home</Link>
+                <Link href="/about" className="text-gray-600 hover:text-green-700 font-medium">About</Link>
                 <Link href="/announcement" className="text-gray-600 hover:text-green-700 font-medium">Announcements</Link>
-                <Link href="/about" className="text-gray-600 hover:text-green-700 font-medium">About Us</Link>
-                <Link href="/testimonials" className="text-gray-600 hover:text-green-700 font-medium">Testimonials</Link>
-                <Link href="/contacts" className="text-gray-600 hover:text-green-700 font-medium">Contact</Link>
+                <Link href="/third-party" className="text-gray-600 hover:text-green-700 font-medium">Partners</Link>
+                <Link href="/contacts" className="text-gray-600 hover:text-green-700 font-medium">Contact Us</Link>
             </nav>
         }
     </header>
