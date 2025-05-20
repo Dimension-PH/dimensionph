@@ -51,11 +51,11 @@ export default function ApplyNow() {
                 <div className="mt-10 bg-gray-50 p-6 rounded-lg border border-gray-200" data-id="element-63">
                     <h3 className="text-lg font-medium text-gray-900 mb-3" data-id="element-64">Application Process</h3>
                     <ol className="list-decimal pl-5 space-y-2 text-gray-600" data-id="element-65">
-                    <li data-id="element-66">Send your updated resume to our official email address: [ <a className="text-blue-500 underline" href={`mailto:${companyEmail}`}>{companyEmail}</a> ]. Make sure your contact details are up to date.</li>
-                    <li data-id="element-67">Once we receive your application, our recruitment team will review it. If shortlisted, you will be contacted via email or phone to schedule an interview.</li>
-                    <li data-id="element-68">If your interview is successful, you will be invited to conduct a short mock teaching session to assess your communication and instructional skills.</li>
-                    <li data-id="element-69">Candidates who pass the mock session will receive an offer and be asked to review and sign the employment contract.</li>
-                    <li data-id="element-70">After signing the contract, you&apos;ll receive an email with <strong>training schedules</strong> and your <strong>official start date</strong>.</li>
+                        <li data-id="element-66">Send your updated resume to our official email address: [ <a className="text-blue-500 underline" href={`mailto:${companyEmail}`}>{companyEmail}</a> ]. Make sure your contact details are up to date.</li>
+                        <li data-id="element-67">Once we receive your application, our recruitment team will review it. If shortlisted, you will be contacted via email or phone to schedule an interview.</li>
+                        <li data-id="element-68">If your interview is successful, you will be invited to conduct a short mock teaching session to assess your communication and instructional skills.</li>
+                        <li data-id="element-69">Candidates who pass the mock session will receive an offer and be asked to review and sign the employment contract.</li>
+                        <li data-id="element-70">After signing the contract, you&apos;ll receive an email with <strong>training schedules</strong> and your <strong>official start date</strong>.</li>
                     </ol>
                 </div>
             </section>

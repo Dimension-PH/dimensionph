@@ -18,7 +18,7 @@ export default function Header() {
                 <Link href="/" className="text-gray-600 hover:text-green-700 font-medium">Home</Link>
                 <Link href="/announcement" className="text-gray-600 hover:text-green-700 font-medium">Announcements</Link>
                 <Link href="/third-party" className="text-gray-600 hover:text-green-700 font-medium">Partners</Link>
-                <Link href="/about" className="text-gray-600 hover:text-green-700 font-medium">About</Link>
+                <Link href="/about" className="text-gray-600 hover:text-green-700 font-medium">About Us</Link>
                 <Link href="/contacts" className="text-gray-600 hover:text-green-700 font-medium">Contact Us</Link>
             </nav>
             <div className="lg:hidden">
@@ -38,9 +38,9 @@ export default function Header() {
 
             <nav className="flex flex-col lg:hidden items-center text-lg space-y-4 pb-4">
                 <Link href="/" className="text-gray-600 hover:text-green-700 font-medium">Home</Link>
-                <Link href="/about" className="text-gray-600 hover:text-green-700 font-medium">About</Link>
                 <Link href="/announcement" className="text-gray-600 hover:text-green-700 font-medium">Announcements</Link>
                 <Link href="/third-party" className="text-gray-600 hover:text-green-700 font-medium">Partners</Link>
+                <Link href="/about" className="text-gray-600 hover:text-green-700 font-medium">About Us</Link>
                 <Link href="/contacts" className="text-gray-600 hover:text-green-700 font-medium">Contact Us</Link>
             </nav>
         }

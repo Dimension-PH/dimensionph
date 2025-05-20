@@ -55,7 +55,7 @@ export default function Footer() {
                             <Link href={'/third-party'}>Partners</Link>
                         </li>
                         <li className="hover:font-bold hover:cursor-pointer">
-                            <Link href={'/about'}>About</Link>
+                            <Link href={'/about'}>About Us</Link>
                         </li>
                     </ul>
                 </div>
