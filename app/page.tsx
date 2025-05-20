@@ -20,8 +20,8 @@ export default function Home() {
           <div className="container mx-auto px-4">
               <div className="flex flex-col lg:flex-row items-center">
                   <div className="lg:w-1/2 mb-10 lg:mb-0 lg:pr-10">
-                      <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                          Welcome to <span className="bg-gradient-to-tr from-green-700 to-lime-400 bg-clip-text text-transparent">Dimension-PH</span> Online Tutorial Services
+                      <h1 className="text-4xl text-center md:text-5xl md:text-start font-bold mb-6 leading-tight">
+                          Welcome to <span className="bg-gradient-to-tr from-green-700 to-lime-400 bg-clip-text text-transparent text-nowrap">Dimension-PH</span> Online Tutorial Services
                       </h1>
                       <p className="text-gray-600 text-lg mb-8 leading-relaxed">
                           At Dimension-PH, we are redefining online education by connecting students from all walks of life in a dynamic and inclusive virtual environment. Our innovative teaching methods, personalized support, and dedication to excellence empower learners to unlock their full potential. Join us on a journey of growth, knowledge, and endless opportunities where education knows no boundaries.

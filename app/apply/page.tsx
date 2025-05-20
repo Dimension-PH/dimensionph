@@ -10,7 +10,7 @@ export default function ApplyNow() {
         <main className="bg-gray-100 pb-10">
             <section className="py-20 px-10 bg-gradient-to-r from-green-700 to-lime-400 space-y-4">
                 <h1 className="text-2xl lg:text-4xl text-white font-bold">Apply to Dimension PH</h1>
-                <p className="text-lg font-medium text-white">Join our community of English language learners and take the first step toward becoming a confident English speaker.</p>
+                <p className="text-lg font-medium text-white">Join our community of English language educators and take the first step toward becoming a confident English teacher.</p>
             </section>
             <section className="py-12 px-10 space-y-6">
                 <div className="space-y-2 pe-6">
@@ -57,6 +57,12 @@ export default function ApplyNow() {
                         <li data-id="element-69">Candidates who pass the mock session will receive an offer and be asked to review and sign the employment contract.</li>
                         <li data-id="element-70">After signing the contract, you&apos;ll receive an email with <strong>training schedules</strong> and your <strong>official start date</strong>.</li>
                     </ol>
+                </div>
+
+                <div className="flex justify-center my-5">
+                    <button className="px-10 py-3 w-full md:w-fit mx-auto bg-gradient-to-tr from-green-700 to-lime-400 rounded-full font-bold text-white hover:from-green-800 hover:to-lime-500" disabled>
+                        Open Google Recruitment Form
+                    </button>
                 </div>
             </section>
         </main>

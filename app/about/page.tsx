@@ -10,7 +10,7 @@ export default function About() {
                 <div className="mx-auto space-y-8 relative z-1">
                     <div className="text-center lg:px-10 max-w-5xl mx-auto space-y-4">
                         <h1 className="text-2xl lg:text-4xl font-bold">About Us</h1>
-                        <p className="text-sm lg:text-md"><strong>Dimension PH</strong> is a dedicated <strong>ESL (English as a Second Language)</strong> teaching platform in the Philippines, committed to helping individuals enhance their English communication skills. In partnership with <strong>51Talk</strong> as our <strong>third-party center</strong>, we connect passionate educators with eager learners to foster confident, fluent English speakers in a supportive and engaging virtual environment.</p>
+                        <p className="text-sm lg:text-md"><strong>Dimension PH</strong> is a dedicated <strong>ESL (English as a Second Language)</strong> teaching platform in the Philippines, committed to helping individuals enhance their English communication skills. In partnership with <strong>51Talk</strong> as one of our <strong>third-party center</strong>, we connect passionate educators with eager learners to foster confident, fluent English speakers in a supportive and engaging virtual environment.</p>
                     </div>
                     
                     <div className="mx-auto px-10">
