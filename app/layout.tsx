@@ -12,10 +12,10 @@ const geistSans = Geist({
 //   subsets: ["latin"],
 // });
 
-const roboto = Roboto({
-  variable: "--font-roboto",
-  subsets: ["latin"]
-})
+// const roboto = Roboto({
+//   variable: "--font-roboto",
+//   subsets: ["latin"]
+// })
 
 export const metadata: Metadata = {
   title: "Dimension PH",
@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${roboto.variable} antialiased`}
+        className={`${geistSans.variable} antialiased`}
       >
         {children}
       </body>
