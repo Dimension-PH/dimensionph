@@ -6,7 +6,7 @@ export default function Footer() {
 
     return(
         <footer className="bg-green-900 pt-14 pb-4 text-white px-5 lg:px-10">
-            <div className="flex justify-between items-start w-fit gap-5 lg:gap-10 lg:w-full lg:justify-evenly">
+            <div className="flex flex-wrap justify-between items-start w-fit gap-5 lg:gap-10 lg:w-full lg:justify-evenly">
                 <div className="flex flex-col justify-start space-y-2 text-sm lg:text-md">
                     <h6 className="font-bold">Contact Us:</h6>
                     {/* Contacts */}
