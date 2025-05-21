@@ -1,5 +1,6 @@
 import Header from "@components/Header"
 import Footer from "@components/Footer"
+import Button from "@components/Button"
 
 export default function ApplyNow() {
     const companyEmail = process.env.NEXT_PUBLIC_COMPANY_EMAIL === "" ? "companyEmail" : process.env.NEXT_PUBLIC_COMPANY_EMAIL;
@@ -48,21 +49,62 @@ export default function ApplyNow() {
                     </ul>
                 </div>
 
-                <div className="mt-10 bg-gray-50 p-6 rounded-lg border border-gray-200" data-id="element-63">
-                    <h3 className="text-lg font-medium text-gray-900 mb-3" data-id="element-64">Application Process</h3>
-                    <ol className="list-decimal pl-5 space-y-2 text-gray-600" data-id="element-65">
-                        <li data-id="element-66">Send your updated resume to our official email address: [ <a className="text-blue-500 underline" href={`mailto:${companyEmail}`}>{companyEmail}</a> ]. Make sure your contact details are up to date.</li>
-                        <li data-id="element-67">Once we receive your application, our recruitment team will review it. If shortlisted, you will be contacted via email or phone to schedule an interview.</li>
-                        <li data-id="element-68">If your interview is successful, you will be invited to conduct a short mock teaching session to assess your communication and instructional skills.</li>
-                        <li data-id="element-69">Candidates who pass the mock session will receive an offer and be asked to review and sign the employment contract.</li>
-                        <li data-id="element-70">After signing the contract, you&apos;ll receive an email with <strong>training schedules</strong> and your <strong>official start date</strong>.</li>
-                    </ol>
+                <div className="mt-10 bg-gray-50 p-6 rounded-lg border border-gray-200 bg-white rounded-lg shadow-lg" data-id="element-63">
+                    <h3 className="text-xl lg:text-2xl font-medium text-gray-900 mb-3" data-id="element-64">Application Process</h3>
+                    <div className="mx-auto p-6 space-y-6">
+                        <section className="text-gray-800">
+                            <h2 className="text-xl font-semibold text-indigo-600">Application & Screening</h2>
+                            <p className="text-base">
+                            To begin your journey as a 51Talk center-based teacher, you will first need to apply directly through your assigned center. Once your application is received, you will undergo an initial screening process to ensure you meet the basic qualifications for the role. If you are deemed eligible, you will be scheduled for an interview to further assess your candidacy.
+                            </p>
+                        </section>
+
+                        <section className="text-gray-800">
+                            <h2 className="text-lg lg:text-xl font-semibold text-indigo-600">Virtual Interview</h2>
+                            <p className="text-base">
+                            During the virtual interview, you will meet with a recruitment specialist who will evaluate your communication skills, professionalism, and potential as an online ESL instructor. This interview serves as an opportunity to demonstrate your suitability for the role and discuss your teaching experience or qualifications in more detail.
+                            </p>
+                        </section>
+
+                        <section className="text-gray-800">
+                            <h2 className="text-lg lg:text-xl font-semibold text-indigo-600">Pre-Service Orientation (PSO)</h2>
+                            <p className="text-base">
+                            The Pre-Service Orientation (PSO) provides you with a comprehensive overview of 51Talk&apos;s online teaching platform, the center-based work environment, and expectations for the role. This orientation ensures you are well-prepared and familiar with the tools and resources available to support your teaching.
+                            </p>
+                        </section>
+
+                        <section className="text-gray-800">
+                            <h2 className="text-lg lg:text-xl font-semibold text-indigo-600">New Teacher Training (NTT)</h2>
+                            <p className="text-base">
+                            In the New Teacher Training (NTT), you will participate in guided sessions focused on essential teaching techniques and best practices for online instruction. These sessions cover how to effectively engage remote learners, utilize teaching tools, and create an interactive and productive learning environment, all within the context of working from a center.
+                            </p>
+                        </section>
+
+                        <section className="text-gray-800">
+                            <h2 className="text-lg lg:text-xl font-semibold text-indigo-600">Mock Demo Lesson</h2>
+                            <p className="text-base">
+                            As part of the training process, you will conduct a mock demo lesson, which simulates an actual online class. This session allows you to practice your teaching skills in a controlled environment and receive constructive feedback from trainers to help you refine your approach before the final assessment.
+                            </p>
+                        </section>
+
+                        <section className="text-gray-800">
+                            <h2 className="text-lg lg:text-xl font-semibold text-indigo-600">Final Demo Lesson</h2>
+                            <p className="text-base">
+                            The final demo lesson is a crucial component of the certification process. Here, you will showcase all the skills and techniques you have learned throughout your training by delivering a complete, live lesson to a mock student. This demonstration serves as the final step in proving your readiness to teach real students online.
+                            </p>
+                        </section>
+
+                        <section className="text-gray-800">
+                            <h2 className="text-lg lg:text-xl font-semibold text-indigo-600">Onboarding & Go-Live</h2>
+                            <p className="text-base">
+                            Upon successful completion of your final demo lesson, you will proceed with the onboarding process, which includes activating your teaching profile and finalizing necessary administrative steps. Once onboarded, you will be ready to start accepting and teaching online classes from the center, officially becoming part of the 51Talk teaching team.
+                            </p>
+                        </section>
+                    </div>
                 </div>
 
                 <div className="flex justify-center my-5">
-                    <button className="px-10 py-3 w-full md:w-fit mx-auto bg-gradient-to-tr from-green-700 to-lime-400 rounded-full font-bold text-white hover:from-green-800 hover:to-lime-500" disabled>
-                        Open Google Recruitment Form
-                    </button>
+                    <Button className="px-10 py-3 w-full md:w-fit mx-auto bg-gradient-to-tr from-green-700 to-lime-400 rounded-full font-bold text-white hover:from-green-800 hover:to-lime-500" redirect="https://docs.google.com/forms/d/e/1FAIpQLSerJQec945h9wy_0-W-tYK2vs5h5nhCHhd5b_wPB8oyp0gc7g/viewform?usp=header" text="Open Google Recruitment Form" />
                 </div>
             </section>
         </main>
