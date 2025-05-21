@@ -3,8 +3,6 @@ import Footer from "@components/Footer"
 import Button from "@components/Button"
 
 export default function ApplyNow() {
-    const companyEmail = process.env.NEXT_PUBLIC_COMPANY_EMAIL === "" ? "companyEmail" : process.env.NEXT_PUBLIC_COMPANY_EMAIL;
-
     return(
         <>
         <Header />
