@@ -2,9 +2,10 @@ import Header from "@components/Header";
 import Footer from "@components/Footer";
 
 import { Mail, PhoneIcon } from "lucide-react";
+import { COMPANY_EMAIL, FACEBOOK_URL } from "@/app/siteConfig";
 
 export default function Contacts() {
-    const companyEmail = process.env.NEXT_PUBLIC_COMPANY_EMAIL === "" ? "companyEmail" : process.env.NEXT_PUBLIC_COMPANY_EMAIL;
+    const companyEmail = COMPANY_EMAIL;
     return(
         <>
         <Header />
@@ -13,10 +14,10 @@ export default function Contacts() {
                 <h1 className="text-center text-2xl lg:text-4xl font-bold bg-gradient-to-tr from-green-700 to-lime-400 bg-clip-text text-transparent mb-10">
                     Dimension-PH Contacts
                 </h1>
-                <div className="relative flex justify-center max-w-2xl mx-auto bg-white shadow-sm rounded-lg overflow-hidden hover:shadow-md text-gray-500 hover:text-gray-400 cursor-pointer">
-                    <img className="w-auto min-w-xs max-w-2xl" src={'/fb-banner.png'} alt="Dimension-PH" />
+                <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer" className="relative flex justify-center max-w-2xl mx-auto bg-white shadow-sm rounded-lg overflow-hidden hover:shadow-md text-gray-500 hover:text-gray-400 cursor-pointer">
+                    <img className="w-auto min-w-xs max-w-2xl" src={'/fb-banner.png'} alt="Dimension-PH Facebook Page" />
                     <span className="absolute p-1 bottom-0 right-0 text-xs font-bold">Click to View</span>
-                </div>
+                </a>
             </section>
 
             <hr className="border-1 my-5 border-gray-300" />
