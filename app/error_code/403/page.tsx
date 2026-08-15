@@ -3,7 +3,7 @@ import Footer from "@components/Footer"
 import Image from "next/image"
 
 export default function UnderDevelopment() {
-    const companyEmail = process.env.NEXT_PUBLIC_COMPANY_EMAIL === "" ? "companyEmail" : process.env.NEXT_PUBLIC_COMPANY_EMAIL;
+    const companyEmail = process.env.NEXT_PUBLIC_COMPANY_EMAIL || "dimensionph1@gmail.com";
     
     return (
         <>
