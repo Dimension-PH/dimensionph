@@ -1,8 +1,9 @@
-import { Smartphone, Mail, Facebook, Instagram, Twitter, Linkedin } from "lucide-react"
+import { Smartphone, Mail, Facebook } from "lucide-react"
 import Link from "next/link";
+import { COMPANY_EMAIL, FACEBOOK_URL, PHONE_TEL, PHONE_DISPLAY } from "@/app/siteConfig";
 
 export default function Footer() {
-    const companyEmail = process.env.NEXT_PUBLIC_COMPANY_EMAIL === "" ? "companyEmail" : process.env.NEXT_PUBLIC_COMPANY_EMAIL;
+    const year = new Date().getFullYear();
 
     return(
         <footer className="bg-green-900 pt-14 pb-4 text-white px-5 lg:px-10">
@@ -13,11 +14,11 @@ export default function Footer() {
                     <div className="ms-2 space-y-4">
                         <div className="flex items-center gap-2">
                             <Smartphone size={15} />
-                            <a href="tel:+639304390294">+639304390294</a>
+                            <a href={`tel:${PHONE_TEL}`}>{PHONE_DISPLAY}</a>
                         </div>
                         <div className="flex items-center gap-2">
                             <Mail size={15} />
-                            <a href={`mailto:${companyEmail}`}>{companyEmail}</a>
+                            <a href={`mailto:${COMPANY_EMAIL}`}>{COMPANY_EMAIL}</a>
                         </div>
                     </div>
                 </div>
@@ -26,19 +27,7 @@ export default function Footer() {
                     <div className="ms-2 space-y-4">
                         <div className="flex items-center gap-2">
                             <Facebook size={15} />
-                            <a href="https://www.facebook.com/profile.php?id=61559330253460">Facebook</a>
-                        </div>
-                        <div className="flex items-center gap-2">
-                            <Instagram size={15} />
-                            <a href="#">Instagram</a>
-                        </div>
-                        <div className="flex items-center gap-2">
-                            <Twitter size={15} />
-                            <a href="#">Twitter</a>
-                        </div>
-                        <div className="flex items-center gap-2">
-                            <Linkedin size={15} />
-                            <a href="#">Linkedin</a>
+                            <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer">Facebook</a>
                         </div>
                     </div>
                 </div>
@@ -57,11 +46,14 @@ export default function Footer() {
                         <li className="hover:font-bold hover:cursor-pointer">
                             <Link href={'/about'}>About Us</Link>
                         </li>
+                        <li className="hover:font-bold hover:cursor-pointer">
+                            <Link href={'/contacts'}>Contact Us</Link>
+                        </li>
                     </ul>
                 </div>
             </div>
             <div className="text-center mt-10">
-                &copy; 2025 Dimension PH, All Rights Reserved.
+                &copy; {year} Dimension-PH, All Rights Reserved.
             </div>
         </footer>
     )
