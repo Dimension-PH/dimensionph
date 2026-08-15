@@ -95,17 +95,26 @@ export default function Home() {
         <section className="bg-green-600 px-12 py-24 lg:py-18 relative overflow-hidden">
           <div className="flex flex-col items-center lg:flex-row lg:justify-evenly lg:items-start gap-6">
             <div className="w-full h-fit max-w-[580px]">
-              <iframe className="relative z-1 w-full h-[60vw] max-h-[440px]" src="https://www.facebook.com/plugins/video.php?height=420&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1072150300771545%2F&show_text=false&width=560&t=0" scrolling="no" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen={true}></iframe>
+              {/* VIDEO TEMPORARILY REMOVED — placeholder shown until a new video is added.
+                  To restore: replace this <div> with a video embed. YouTube is recommended, e.g.:
+                  <iframe className="relative z-1 w-full h-[60vw] max-h-[440px] rounded-xl" src="https://www.youtube.com/embed/VIDEO_ID" title="Meet Teacher Alia" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe> */}
+              <div className="relative z-1 w-full h-[60vw] max-h-[440px] rounded-xl bg-green-800/50 border-2 border-dashed border-yellow-300 flex flex-col items-center justify-center text-center px-6 shadow-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-14 w-14 text-yellow-300 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                </svg>
+                <p className="text-yellow-300 font-bold text-xl">Video coming soon</p>
+                <p className="text-white/80 text-sm mt-1">Teacher Alia’s introduction will be available here shortly.</p>
+              </div>
             </div>
             <div className="lg:w-1/2 space-y-5 pt-4 relative z-1">
               <h2 className="text-2xl font-bold text-yellow-400 md:text-4xl">Meet Teacher Alia – Your Dedicated Online English Instructor</h2>
-              <p className="text-white lg:text-lg font-medium">Get to know Teacher Alia Gaile, one of our experienced ESL educators at Dimension PH. With over four years of teaching experience and a bachelor’s degree in English education, Teacher Aliyah has taught students of all ages—from young children to adults. She uses proven methods like CPR (Contextualized Practice and Review) to make learning effective and enjoyable. Her lessons focus on phonics, grammar, pronunciation, and real-life conversation skills to help learners become confident English speakers. Watch the video to see the heart behind our teaching and what makes Dimension PH a trusted name in online English education.</p>
+              <p className="text-white lg:text-lg font-medium">Get to know Teacher Alia Gaile, one of our experienced ESL educators at Dimension PH. With over four years of teaching experience and a bachelor’s degree in English education, Teacher Alia has taught students of all ages—from young children to adults. She uses proven methods like CPR (Contextualized Practice and Review) to make learning effective and enjoyable. Her lessons focus on phonics, grammar, pronunciation, and real-life conversation skills to help learners become confident English speakers. Get to know the heart behind our teaching and what makes Dimension PH a trusted name in online English education.</p>
             </div>
 
-            <a className="absolute bg-yellow-400 rounded-lg shadow-lg w-35 h-23 -top-5 right-10 flex flex-col items-center justify-end p-1" href="#">
+            <a className="absolute bg-yellow-400 rounded-lg shadow-lg w-35 h-23 -top-5 right-10 flex flex-col items-center justify-end p-1 hover:brightness-105 transition" href="/third-party">
               <h6 className={`${fredoka.className} text-3xl text-cyan-600 font-bold`}>51Talk</h6>
               <span className="text-xs text-gray-600 text-center">One of our many 3rd Party accounts</span>
-            </a> 
+            </a>
 
             {/* Animate like in the bottom right */}
             <div className="absolute bg-green-800 w-24 h-24 lg:w-30 lg:h-30 rounded-full -bottom-12 right-18 shadow-lg z-0"></div>
