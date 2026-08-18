@@ -40,7 +40,7 @@ export default function ApplyNow() {
                 <div className="mt-6 py-2 space-y-2">
                     <h4 className="text-lg font-medium">Schedule:</h4>
                     <ul className="ps-2 space-y-2">
-                        <li>Graveyard shift, 6:00 PM – 5:00 AM (Monday to Saturday)</li>
+                        <li>Graveyard shift, 6:00 PM &ndash; 5:00 AM (Monday to Saturday)</li>
                     </ul>
                 </div>
                 <div className="mt-10 p-6 rounded-lg border border-gray-200 bg-white shadow-lg">
@@ -90,6 +90,27 @@ export default function ApplyNow() {
                         </section>
                     </div>
                 </div>
+
+                {/* ACE — AI interview practice. Placed before the application form so
+                    candidates can rehearse before committing. */}
+                <div className="mt-10 p-6 rounded-lg border border-green-300 bg-white shadow-lg">
+                    <h3 className="text-xl lg:text-2xl font-medium text-gray-900 mb-3">
+                        Prepare with <span className="bg-gradient-to-tr from-green-700 to-lime-400 bg-clip-text text-transparent font-bold">ACE</span>
+                    </h3>
+                    <p className="text-base text-gray-800">
+                        ACE is our AI-powered interview practice app. Rehearse the kinds of questions asked during
+                        the virtual interview, practise your spoken English, and get feedback before you sit down
+                        with a recruitment specialist.
+                    </p>
+                    <div className="flex justify-center md:justify-start mt-5">
+                        <Button
+                            className="px-8 py-3 w-full md:w-fit border-2 border-green-700 text-green-700 rounded-full font-bold hover:bg-green-700 hover:text-white transition duration-300"
+                            redirect="https://practice.dimension-ph.com"
+                            text="Practice with ACE"
+                        />
+                    </div>
+                </div>
+
                 <div className="flex justify-center my-5">
                     <Button className="px-10 py-3 w-full md:w-fit mx-auto bg-gradient-to-tr from-green-700 to-lime-400 rounded-full font-bold text-white hover:from-green-800 hover:to-lime-500" redirect="https://docs.google.com/forms/d/e/1FAIpQLSerJQec945h9wy_0-W-tYK2vs5h5nhCHhd5b_wPB8oyp0gc7g/viewform?usp=header" text="Open Google Recruitment Form" />
                 </div>
