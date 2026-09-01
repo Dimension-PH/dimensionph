@@ -94,7 +94,7 @@ export default function Home() {
         </section>
         <section className="bg-green-600 px-12 py-24 lg:py-18 relative overflow-hidden">
           <div className="flex flex-col items-center lg:flex-row lg:items-center lg:justify-center gap-8 lg:gap-12 max-w-6xl mx-auto">
-            <div className="w-full lg:w-1/2 h-fit max-w-[560px] mx-auto shrink-0">
+            <div className="w-full lg:w-1/2 h-fit max-w-[560px] mx-auto shrink-0 relative z-40">
               {/* Teacher intro video — self-hosted from /public/teacher-mia-freya.mp4
                   To swap later: replace that file in /public (keep the same name) or update the <source> src below. */}
               <video
@@ -136,7 +136,7 @@ export default function Home() {
             </div>
 
             {/* Panda placed AFTER the section but BEFORE CommunityBanner */}
-            <div className="absolute z-30 -bottom-3 left-0">
+            <div className="absolute z-30 -bottom-3 left-0 pointer-events-none">
               <div className="bg-[url('/panda.png')] bg-cover bg-center w-50 h-50 lg:w-60 lg:h-60 mx-auto" />
             </div>
         </section>
