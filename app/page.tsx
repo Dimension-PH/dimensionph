@@ -95,20 +95,25 @@ export default function Home() {
         <section className="bg-green-600 px-12 py-24 lg:py-18 relative overflow-hidden">
           <div className="flex flex-col items-center lg:flex-row lg:justify-evenly lg:items-start gap-6">
             <div className="w-full h-fit max-w-[580px]">
-              {/* VIDEO TEMPORARILY REMOVED — placeholder shown until a new video is added.
-                  To restore: replace this <div> with a video embed. YouTube is recommended, e.g.:
-                  <iframe className="relative z-1 w-full h-[60vw] max-h-[440px] rounded-xl" src="https://www.youtube.com/embed/VIDEO_ID" title="Meet Teacher Alia" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe> */}
-              <div className="relative z-1 w-full h-[60vw] max-h-[440px] rounded-xl bg-green-800/50 border-2 border-dashed border-yellow-300 flex flex-col items-center justify-center text-center px-6 shadow-lg">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-14 w-14 text-yellow-300 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                </svg>
-                <p className="text-yellow-300 font-bold text-xl">Video coming soon</p>
-                <p className="text-white/80 text-sm mt-1">Teacher Alia’s introduction will be available here shortly.</p>
-              </div>
+              {/* Teacher intro video — self-hosted from /public/teacher-mia-freya.mp4
+                  To swap later: replace that file in /public (keep the same name) or update the <source> src below. */}
+              <video
+                className="relative z-1 w-full h-auto max-h-[440px] rounded-xl shadow-lg bg-green-900 object-contain"
+                controls
+                playsInline
+                preload="metadata"
+                aria-label="Meet Teacher Mia Freya introduction video"
+              >
+                <source src="/teacher-mia-freya.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
             <div className="lg:w-1/2 space-y-5 pt-4 relative z-1">
-              <h2 className="text-2xl font-bold text-yellow-400 md:text-4xl">Meet Teacher Alia – Your Dedicated Online English Instructor</h2>
-              <p className="text-white lg:text-lg font-medium">Get to know Teacher Alia Gaile, one of our experienced ESL educators at Dimension PH. With over four years of teaching experience and a bachelor’s degree in English education, Teacher Alia has taught students of all ages—from young children to adults. She uses proven methods like CPR (Contextualized Practice and Review) to make learning effective and enjoyable. Her lessons focus on phonics, grammar, pronunciation, and real-life conversation skills to help learners become confident English speakers. Get to know the heart behind our teaching and what makes Dimension PH a trusted name in online English education.</p>
+              <h2 className="text-2xl font-bold text-yellow-400 md:text-4xl">Meet Teacher Mia Freya – Your Dedicated Online English Instructor</h2>
+              <p className="text-white lg:text-lg font-medium">One of the most rewarding parts of being a teacher is witnessing a student’s progress. 🥹✨ Since last month, we’ve had 30 classes together, and I can truly say that every class has been worth it. When we first started, he was struggling to even utter words. Now, he can answer using short sentences, follow directions attentively, and participate more confidently in our lessons. 🥰</p>
+              <p className="text-white lg:text-lg font-medium">I truly admire his effort, patience, and dedication to learning English. There were times when our class would start and I could see how tired he was after his physical classes. But somehow, with a little encouragement, fun, and the right activities, I could capture his attention, make him smile, and keep him engaged until the end of the lesson. 🥹✨</p>
+              <p className="text-white lg:text-lg font-medium">I’m grateful to God for giving me the patience, knowledge, and wisdom to guide him throughout this journey. 🙏 30 classes, countless little improvements, and so many moments to be proud of. This is why I love teaching. Seeing a student grow, even through small steps, is a reward that words can hardly describe. 🥰❤️</p>
+              <p className="text-yellow-300 lg:text-lg font-bold italic">– Mia Freya 💚</p>
             </div>
 
             <a className="absolute bg-yellow-400 rounded-lg shadow-lg w-35 h-23 -top-5 right-10 flex flex-col items-center justify-end p-1 hover:brightness-105 transition" href="/third-party">
