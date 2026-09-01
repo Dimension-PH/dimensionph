@@ -10,6 +10,42 @@ image: string;
 
 export const sampleData: Announcement[] = [
     {
+        id: 5,
+        title: 'Teacher of the Month: Mia Freya',
+        date: '2026-09-01',
+        category: 'Teacher of the Month',
+        preview: "Congratulations to Teacher Mia Freya — our Teacher of the Month! A look at the dedication behind her students' progress.",
+        image: '/mia-freya-poster.jpg',
+        content: `
+            <p>Please join us in congratulating <strong>Teacher Mia Freya</strong>, Dimension-PH&rsquo;s <strong>Teacher of the Month</strong>! Mia&rsquo;s patience, warmth, and dedication have made a real difference for her students &mdash; and her results speak for themselves.</p>
+            <p>In her own words:</p>
+            <blockquote>
+                <p>&ldquo;One of the most rewarding parts of being a teacher is witnessing a student&rsquo;s progress. Since last month, we&rsquo;ve had 30 classes together, and I can truly say that every class has been worth it. When we first started, he was struggling to even utter words. Now, he can answer using short sentences, follow directions attentively, and participate more confidently in our lessons.&rdquo;</p>
+                <p>&ldquo;I truly admire his effort, patience, and dedication to learning English. There were times when our class would start and I could see how tired he was after his physical classes. But somehow, with a little encouragement, fun, and the right activities, I could capture his attention, make him smile, and keep him engaged until the end of the lesson. Thirty classes, countless little improvements, and so many moments to be proud of &mdash; this is why I love teaching.&rdquo;</p>
+                <p>&mdash; Teacher Mia Freya</p>
+            </blockquote>
+            <p>Thank you, Teacher Mia, for the heart you bring to every class. Want to learn from teachers like Mia, or build a teaching career of your own? Visit our Apply page to get started.</p>
+        `,
+    },
+    {
+        id: 6,
+        title: 'Year-End Team Building Gathering — Coming Soon',
+        date: '2026-09-01',
+        category: 'Events',
+        preview: 'Our year-end team building gathering is coming up soon. Follow us on Facebook for dates, details, and updates.',
+        image: '/fb-banner.png',
+        content: `
+            <p>Get ready to celebrate &mdash; our <strong>Year-End Team Building Gathering</strong> is coming up soon! It&rsquo;s our way of thanking the Dimension-PH family for a year of hard work, growth, and heart, with a day of fun, connection, and appreciation for the whole team.</p>
+            <p>Dates and full details will be announced shortly. <strong>Follow us on Facebook</strong> so you don&rsquo;t miss a single update.</p>
+            <p style="text-align:center;margin-top:1.5rem;">
+                <a href="https://www.facebook.com/dimensionphbutuan" target="_blank" rel="noopener noreferrer">
+                    <img src="/fb-qr.png" alt="Scan to follow Dimension-PH on Facebook" style="width:220px;height:auto;display:inline-block;border-radius:8px;" />
+                </a>
+            </p>
+            <p style="text-align:center;color:#555;">Scan the QR code or visit <a href="https://www.facebook.com/dimensionphbutuan" target="_blank" rel="noopener noreferrer">facebook.com/dimensionphbutuan</a> to follow us for updates.</p>
+        `,
+    },
+    {
         id: 3,
         title: 'New Teacher Training Batch Now Open',
         date: '2026-08-10',
