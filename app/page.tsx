@@ -4,6 +4,7 @@ import { Fredoka } from "next/font/google";
 import Header from "@components/Header";
 import Footer from "@components/Footer";
 import CommunityBanner from "@components/CommunityBanner";
+import TeacherVideo from "@components/TeacherVideo";
 import Btn from "./components/Button";
 
 const fredoka = Fredoka({
@@ -95,19 +96,9 @@ export default function Home() {
         <section className="bg-green-600 px-12 py-24 lg:py-18 relative overflow-hidden">
           <div className="flex flex-col items-center lg:flex-row lg:items-center lg:justify-center gap-8 lg:gap-12 max-w-6xl mx-auto">
             <div className="w-full lg:w-1/2 h-fit max-w-[560px] mx-auto shrink-0 relative z-40">
-              {/* Teacher intro video — self-hosted from /public/teacher-mia-freya.mp4
-                  To swap later: replace that file in /public (keep the same name) or update the <source> src below. */}
-              <video
-                className="relative z-1 w-full h-auto max-h-[440px] rounded-xl shadow-lg bg-green-900 object-contain"
-                controls
-                playsInline
-                preload="metadata"
-                poster="/mia-freya-poster.jpg"
-                aria-label="Meet Teacher Mia Freya introduction video"
-              >
-                <source src="/teacher-mia-freya.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+              {/* Teacher intro video — click-to-play component (app/components/TeacherVideo.tsx).
+                  Swap the video by replacing /public/teacher-mia-freya.mp4 (keep the name). */}
+              <TeacherVideo />
             </div>
             <div className="w-full lg:w-1/2 space-y-5 relative z-1">
               <h2 className="text-2xl font-bold text-yellow-400 md:text-4xl lg:pr-28">Meet Teacher Mia Freya – Your Dedicated Online English Instructor</h2>
