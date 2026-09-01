@@ -102,6 +102,7 @@ export default function Home() {
                 controls
                 playsInline
                 preload="metadata"
+                poster="/mia-freya-poster.jpg"
                 aria-label="Meet Teacher Mia Freya introduction video"
               >
                 <source src="/teacher-mia-freya.mp4" type="video/mp4" />
