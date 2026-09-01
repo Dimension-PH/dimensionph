@@ -29,6 +29,16 @@ export default function Footer() {
                             <Facebook size={15} />
                             <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer">Facebook</a>
                         </div>
+                        {/* Scan-to-follow QR for the Facebook page */}
+                        <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer" className="inline-block">
+                            <img
+                                src="/fb-qr.png"
+                                alt="Scan the QR code to follow Dimension-PH on Facebook"
+                                width={128}
+                                height={149}
+                                className="rounded-md shadow-md"
+                            />
+                        </a>
                     </div>
                 </div>
                 <div className="flex flex-col gap-2 text-sm lg:text-md">
