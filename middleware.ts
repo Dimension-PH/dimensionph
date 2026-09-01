@@ -22,6 +22,7 @@ export function middleware(req: NextRequest) {
     pathname.startsWith('/_next') ||
     pathname.startsWith('/error_code/') ||
     pathname.startsWith('/favicon.ico') ||
+    pathname.startsWith('/announcement') ||
     /\.[a-z0-9]+$/i.test(pathname)
   ) {
     return NextResponse.next();
