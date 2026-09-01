@@ -15,11 +15,14 @@ export function middleware(req: NextRequest) {
   const pathUnderMaintenance = getPathsFromEnv(process.env.PATH_UNDER_MAINTENANCE);
   const pathUnderDevelopment = getPathsFromEnv(process.env.PATH_UNDER_DEVELOPMENT);
 
-  // Prevent this page from being blocked
+  // Prevent this page from being blocked. Also skip any static asset (a path with a
+  // file extension, e.g. .mp4, .jpg, .css) so media streaming / range requests are
+  // never intercepted — that is what stops the intro video from playing.
   if (
     pathname.startsWith('/_next') ||
     pathname.startsWith('/error_code/') ||
-    pathname.startsWith('/favicon.ico')
+    pathname.startsWith('/favicon.ico') ||
+    /\.[a-z0-9]+$/i.test(pathname)
   ) {
     return NextResponse.next();
   }
@@ -42,3 +45,10 @@ function shouldRedirectToMaintenance(pathname: string, isEnabled: boolean, prote
 function shouldRedirectToDevelopment(pathname: string, isEnabled: boolean, protectedPaths: string[]) {
   return isEnabled && protectedPaths.some(path => pathname.startsWith(path));
 }
+
+// Only run middleware on real pages — never on framework internals or static assets
+// (anything with a file extension). This keeps /public media (the .mp4) streaming
+// normally so the video can play.
+export const config = {
+  matcher: ['/((?!_next|.*\\..*).*)'],
+};
